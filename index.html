@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+	<style>
+		html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: none;
+            position: absolute;
+        }
+        .zast{
+        	background-image: url(sor.jpg);
+        	height: 100%;
+        	width: 100%;
+        	position: absolute;
+        	z-index: 1;
+        	background-size: 100% 100%;
+        }
+
+        .btn{
+        	height: 5%;
+        	width: 10%;
+        	position: absolute;
+        	z-index: 2;
+        	margin-top: 35%;
+        	margin-left: 45%;
+        }
+	</style>
+<body>
+<button class="btn" onclick="exac()"></button>
+<div class="zast"></div>
+	<div class="blcube"></div>
+	<div class="blcube2"></div>
+	<div class="main">
+		<div style="width: 90%; height: 95%; background-image: url(1.png); margin-left: 5%; margin-top: 1.5%; background-size: 100% 110%; opacity: 0;" class="first"></div>
+		<div class="dial" style="background-image: url(dial.png); background-size: 100% 100%; width: 100%; height: 20%; opacity: 0; position: absolute; margin-top: -10%; z-index: 2;">
+			<h1 class="name1" style="opacity: 0; color: white; margin-left: 5%; font-family: Calibri;">Мокий</h1>
+			<h1 class="name2" style="opacity: 0; color: white; margin-left: 5%; font-family: Calibri; display: none;">Мама</h1>
+			<h2 class="text1" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%;">"Да, это я, самый обычный человек, даже слишком обычный что ничем не примечателен и мало кто замечает меня, ну знаете, вроде есть, а вроде нет."</h2>
+			<h2 class="text2" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute; ">"Ну и вот, я решил выделится, я стану работником года,</h2>
+			<h2 class="text3" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute; margin-left: 37.5%;">чтобы все знали что я хотя бы существую."</h2>
+			<h2 class="text4" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">"Но работником года очень сложно стать если я буду в обычном темпе работать,</h2>
+			<h2 class="text5" style="opacity: 0; color: white; margin-left: 51.8%; font-family: Calibri; margin-top: -0.5%; position: absolute;">так что я остаюсь на ночную смену..."</h2>
+			<h2 class="text6" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">...я так устал..</h2>
+			<h2 class="text7" style="opacity: 0; color: white; margin-left: 13.6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">..как бы я хотел стать снова маленьким...</h2>
+			<h2 class="text8" style="opacity: 0; color: white; margin-left: 36.6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">..никаких забот, не нужно зарабатывать деньги..</h2>
+			<h2 class="text9" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">..полно друзей..да вообще просто счастлив..</h2>
+			<h2 class="text10" style="opacity: 0; color: white; margin-left: 30%; font-family: Calibri; margin-top: -0.5%; position: absolute;">...мммм...как бы..</h2>
+			<h2 class="text11" style="opacity: 0; color: white; margin-left: 40%; font-family: Calibri; margin-top: -0.5%; position: absolute;">..я хотел снова..</h2>
+			<h2 class="text12" style="opacity: 0; color: white; margin-left: 48.8%; font-family: Calibri; margin-top: -0.5%; position: absolute;">..хррр..</h2>
+			<h2 class="text13" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Черт! Зачем так рано..мм</h2>
+			<h2 class="text14" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Дорогой! Вставай, уже утро! Тебе пора в школу и будь добр, собери портфель.</h2>
+			<h2 class="text15" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">М-мама! Я ведь 10 лет назад съехал с родительского дома..</h2>
+			<h2 class="text16" style="opacity: 0; color: white; margin-left: 39.5%; font-family: Calibri; margin-top: -0.5%; position: absolute;">не может быть..эта комната...</h2>
+			<h2 class="text17" style="opacity: 0; color: white; margin-left: 56.1%; font-family: Calibri; margin-top: -0.5%; position: absolute;">это моя детская комната!</h2>
+			<h2 class="text18" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Так, соберись я просто сплю, щас ущипну себя и я проснусь.</h2>
+			<h2 class="text19" style="opacity: 0; color: white; margin-left: 39.4%; font-family: Calibri; margin-top: -0.5%; position: absolute;">.АЙ!</h2>
+			<h2 class="text20" style="opacity: 0; color: white; margin-left: 42%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Ладно я не сплю и это не сон.</h2>
+			<h2 class="text21" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Боже мой, это ведь я, правда очень молодой,</h2>
+			<h2 class="text22" style="opacity: 0; color: white; margin-left: 32%; font-family: Calibri; margin-top: -0.5%; position: absolute;">да не то чтобы молодой, я ребенок!</h2>
+			<h2 class="text23" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Мокий! Почему ты так долго?</h2>
+			<h2 class="text24" style="opacity: 0; color: white; margin-left: 6%; font-family: Calibri; margin-top: -0.5%; position: absolute;">Ой, нужно собрать портфель и одеться,</h2>
+			<h2 class="text25" style="opacity: 0; color: white; margin-left: 28.2%; font-family: Calibri; margin-top: -0.5%; position: absolute;">лучше не надо злить мою маму, я знаю к чему это может привести...</h2>
+		</div>
+		<div class="second" style="background-image: url(2.png); background-size: 100% 100%; width: 45%; height: 85%; margin-left: 5%; margin-top: 1.5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="third" style="background-image: url(3.png); background-size: 100% 100%; width: 45%; height: 85%; margin-left: 52%; margin-top: 1.5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="fourth" style="background-image: url(4.png); background-size: 100% 100%; width: 90%; height: 85%; margin-left: 5%; margin-top: 1.5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="fifth" style="background-image: url(5.png); background-size: 100% 100%; width: 90%; height: 60%; margin-left: 5%; margin-top: 5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="sixth" style="background-image: url(6.png); background-size: 100% 100%; width: 90%; height: 20%; margin-left: 5%; margin-top: 20%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="seventh" style="background-image: url(7.png); background-size: 100% 100%; width: 70%; height: 95%; margin-left: 13%; margin-top: 1.5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="eigth" style="background-image: url(8.png); background-size: 100% 100%; width: 70%; height: 80%; margin-left: 15%; margin-top: 3.5%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="ninth" style="background-image: url(9.png); background-size: 100% 100%; width: 90%; height: 95%; margin-left: 5%; margin-top: 1%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="tenth" style="background-image: url(10.png); background-size: 100% 100%; width: 48%; height: 95%; margin-left: 5%; margin-top: 1%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+		<div class="eleventh" style="background-image: url(11.png); background-size: 100% 100%; width: 43%; height: 95%; margin-left: 55%; margin-top: 1%; opacity: 0; display: none; position: absolute; z-index: 1;"></div>
+	</div>
+
+
+	<div class="game1" style="background-image: url(gm1bg.png); background-size: 100% 100%; position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 1; display: none; opacity: 0;">
+<div class="qf" style="background-image: url(q1.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 0%; margin-top: 0%; z-index: 2; "></div>
+<div class="qs" style="background-image: url(q2.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 1%; margin-top: 0%; z-index: 2; "></div>
+<div class="qfo" style="background-image: url(q4.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 0%; margin-top: 0%; z-index: 2; "></div>
+<div class="qfi" style="background-image: url(q5.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 1%; margin-top: 0%; z-index: 2; "></div>
+<div class="qse" style="background-image: url(q6.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 1%; margin-top: 0%; z-index: 2;"></div>
+<div class="qsev" style="background-image: url(q7.png); background-size: 100% 100%; position: absolute; width: 99%; height: 99%; margin-left: 1%; margin-top: 0%; z-index: 2; "></div>
+<div style="position: absolute; z-index: 2; width: 16%; height: 18%; background-color: white; left: 0;  " class="whitecube"></div>
+<h3 style="position: absolute; color: white; z-index: 2; font-family: arial black; -webkit-text-stroke: 1px black; " class="find">Найди 6 школьных вещей:</h3>
+
+<h3 class="prt" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 2%; font-family: arial black; ">портфель - ❌</h3>
+<h3 class="pen" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 3%; font-family: arial black; ">пенал - ❌</h3>
+<h3 class="azb" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 4%; font-family: arial black; ">азбука - ❌</h3>
+<h3 class="kar" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 5%; font-family: arial black; ">карандаш - ❌</h3>
+<h3 class="tet" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 6%; font-family: arial black; ">тетрадь - ❌</h3>
+<h3 class="cher" style="position: absolute; color: white; -webkit-text-stroke: 1px black; z-index: 2; margin-top: 7%; font-family: arial black; ">чернила - ❌</h3>
+
+<div class="bf" style="background-color: none; width: 2%; height: 7%; position: absolute; z-index: 2; margin-left: 64%; margin-top: 32%; "></div>
+<div class="bs" style="background-color: none; width: 5%; height: 10%; position: absolute; z-index: 2; margin-left: 37%; margin-top: 17%; "></div>
+<div class="bfo" style="background-color: none; width: 10%; height: 3%; position: absolute; z-index: 2; margin-left: 65%; margin-top: 5%; "></div>
+<div class="bfi" style="background-color: none; width: 5%; height: 10%; position: absolute; z-index: 2; margin-left: 55%; margin-top: 18%; "></div>
+<div class="bse" style="background-color: none; width: 12%; height: 15%; position: absolute; z-index: 2; margin-left: 35%; margin-top: 25%; "></div>
+<div class="bsev" style="background-color: none; width: 12%; height: 15%; position: absolute; z-index: 2; margin-left: 87%; margin-top: 30%; "></div>
+</div>
+	<script>
+function exac(){
+	let qf = document.querySelector(".qf");
+	let bf = document.querySelector(".bf");
+	let qs = document.querySelector(".qs");
+	let bs = document.querySelector(".bs");
+	let bt = document.querySelector(".bt");
+	let qfo = document.querySelector(".qfo");
+	let bfo = document.querySelector(".bfo");
+	let qfi = document.querySelector(".qfi");
+	let bfi = document.querySelector(".bfi");
+	let qse = document.querySelector(".qse");
+	let bse = document.querySelector(".bse");
+	let qsev = document.querySelector(".qsev");
+	let bsev = document.querySelector(".bsev");
+	let grp = document.querySelector(".grp");
+
+	let prt = document.querySelector(".prt");
+	let pen = document.querySelector(".pen");
+	let azb = document.querySelector(".azb");
+	let kar = document.querySelector(".kar");
+	let tet = document.querySelector(".tet");
+	let cher = document.querySelector(".cher");
+	let find = document.querySelector(".find");
+	let whitecube = document.querySelector(".whitecube");
+
+	let score = 0;
+
+
+
+		let zast = document.querySelector(".zast");
+		let blcube = document.querySelector(".blcube");
+		let blcube2 = document.querySelector(".blcube2");
+		let btn = document.querySelector(".btn");
+		let main = document.querySelector(".main");
+		let first = document.querySelector(".first");
+		let second = document.querySelector(".second");
+		let dial = document.querySelector(".dial");
+		let text1 = document.querySelector(".text1");
+		let name1 = document.querySelector(".name1");
+		let text2 = document.querySelector(".text2");
+		let text3 = document.querySelector(".text3");
+		let third = document.querySelector(".third");
+		let text4 = document.querySelector(".text4");
+		let text5 = document.querySelector(".text5");
+		let text6 = document.querySelector(".text6");
+		let fourth = document.querySelector(".fourth");
+		let text7 = document.querySelector(".text7");
+		let text8 = document.querySelector(".text8");
+		let fifth = document.querySelector(".fifth");
+		let text9 = document.querySelector(".text9");
+		let text10 = document.querySelector(".text10");
+		let text11 = document.querySelector(".text11");
+		let text12 = document.querySelector(".text12");
+		let sixth = document.querySelector(".sixth");
+		let seventh = document.querySelector(".seventh");
+		let eigth = document.querySelector(".eigth");
+		let ninth = document.querySelector(".ninth");
+		let text13 = document.querySelector(".text13");
+		let text14 = document.querySelector(".text14");
+		let text15 = document.querySelector(".text15");
+		let text16 = document.querySelector(".text16");
+		let name2 = document.querySelector(".name2");
+		let text17 = document.querySelector(".text17");
+		let tenth = document.querySelector(".tenth");
+		let text18 = document.querySelector(".text18");
+		let text19 = document.querySelector(".text19");
+		let text20 = document.querySelector(".text20");
+		let text21 = document.querySelector(".text21");
+		let text22 = document.querySelector(".text22");
+		let text23 = document.querySelector(".text23");
+		let text24 = document.querySelector(".text24");
+		let eleventh = document.querySelector(".eleventh");
+		let text25 = document.querySelector(".text25");
+		let game1 = document.querySelector(".game1");
+			zast.style.display = "none";
+			main.style.display = "block";
+			btn.style.display = "none";
+
+
+		function letsgo(){
+			first.style.transition = "1s";
+			first.style.opacity = "1";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s"
+			text1.style.opacity = "1";
+			text1.style.transition = '2s';
+			name1.style.opacity = "1";
+			name1.style.transition = "2s"
+		}
+		function endoftrip(){
+			first.style.transition = "1s";
+			first.style.opacity = "0";
+			dial.style.opacity = "0";
+			dial.style.transition = "2s"
+			text1.style.opacity = "0";
+			text1.style.transition = '2s';
+			name1.style.opacity = "0";
+			name1.style.transition = "2s"
+		}
+		function stop(){
+			first.style.display = "none";
+			text1.style.display = "none";
+			second.style.display = "block";
+			dial.style.marginTop = "39%";
+			third.style.display = "block"
+		}
+
+		function letsgo2(){
+			second.style.opacity = "1";
+			second.style.transition = "1s";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s";
+			name1.style.opacity = "1";
+			name1.style.transition = "2s";
+			text2.style.opacity = "1";
+			text2.style.transition = "2s";
+		}
+		function bonust(){
+			text3.style.opacity = "1";
+			text3.style.transition = "2s";
+		}
+		function bonust2(){
+			third.style.opacity = "1";
+			third.style.transition = "2s";
+			text3.style.opacity = "0";
+			text3.style.transition = "2s";
+			text2.style.opacity = "0";
+			text2.style.transition = "2s";
+		}
+		function bonust3(){
+			text3.style.display = "none";
+			text2.style.display = "none";
+			text4.style.opacity = "1";
+			text4.style.transition = "2s"
+		}
+		function bonust4(){
+			text5.style.opacity = "1";
+			text5.style.transition = "2s";
+		}
+		function endoftrip2(){
+			second.style.opacity = "0";
+			second.style.transition = "1s";
+			third.style.opacity = "0";
+			third.style.transition = "1s";
+			dial.style.opacity = "0";
+			dial.style.transition = "2s";
+			text4.style.opacity = "0";
+			text4.style.transition = "2s";
+			text5.style.opacity = "0";
+			text5.style.transition = "2s";
+		}
+		function stop2(){
+			second.style.display = "none";
+			third.style.display = "none";
+			text4.style.display = "none";
+			text5.style.display = "none";
+			fourth.style.display = "block"
+		}
+		function letsgo3(){
+			fourth.style.opacity = "1";
+			fourth.style.transition = "1s";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s";
+			name1.style.opacity = "1";
+			name1.style.transition = "2s";
+			text6.style.opacity = "1";
+			text6.style.transition = "2s"
+		}
+		function tbonus(){
+			text7.style.opacity = "1";
+			text7.style.transition = "2s"
+		}
+		function tbonus1(){
+			text8.style.opacity = "1";
+			text8.style.transition = "2s"
+		}
+		function endoftrip3(){
+			text6.style.opacity = "0";
+			text6.style.transition = "2s";
+			text7.style.opacity = "0";
+			text7.style.transition = "2s";
+			text8.style.opacity = "0";
+			text8.style.transition = "2s";
+			dial.style.opacity = "0";
+			dial.style.transition = "1s";
+			name1.style.opacity = "0";
+			name1.style.transition = "2s";
+			fourth.style.opacity = "0";
+			fourth.style.transition = "1s";
+		}
+		function stop3(){
+			text6.style.display = "none";
+			text7.style.display = "none";
+			text8.style.display = "none";
+			fourth.style.display = "none";
+			fifth.style.display = "block";
+		}
+		function letsgo4(){
+			fifth.style.opacity = "1";
+			fifth.style.transition = "1s";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s";
+			name1.style.opacity = "1";
+			name1.style.transition = "2s";
+			text9.style.opacity = "1";
+			text9.style.transition = "2s"
+		}
+		function txtbonus(){
+			text10.style.opacity = "1";
+			text10.style.transition = "2s"
+		}
+		function txtbonus2(){
+			text11.style.opacity = "1";
+			text11.style.transition = "2s"
+		}
+		function txtbonus3(){
+			text12.style.opacity = "1";
+			text12.style.transition = "2s"
+		}
+		function endoftrip4(){
+			text9.style.opacity = "0";
+			text9.style.transition = "2s";
+			text10.style.opacity = "0";
+			text10.style.transition = "2s";
+			text11.style.opacity = "0";
+			text11.style.transition = "2s";
+			text12.style.opacity = "0";
+			text12.style.transition = "2s";
+			dial.style.opacity = "0";
+			dial.style.transition = "2s";
+			name1.style.opacity = "0";
+			name1.style.transition = "2s";
+			fifth.style.marginTop = "-40%";
+			fifth.style.transition = "6s";
+			fifth.style.opacity = "0";
+			fifth.style.transition = "3s";
+			sixth.style.display = "block";		
+		}
+		function letsgo5(){
+			sixth.style.opacity = "1";
+			sixth.style.transition = "3s";
+			main.style.backgroundColor = "white";
+			main.style.transition = "8s";
+			fifth.style.display = "none"
+		}
+		function endoftrip5(){
+			sixth.style.opacity = "0";
+			sixth.style.transition = "1s";
+			seventh.style.display = "block"
+		}
+		function letsgo6(){
+			seventh.style.opacity = "1";
+			seventh.style.transition = "1s";
+			sixth.style.display = "none"
+		}
+		function endoftrip6(){
+			seventh.style.transition = "1s";
+			seventh.style.opacity = "0";
+			eigth.style.display	= "block";
+		}
+		function letsgo7(){
+			seventh.style.display = "none";
+			eigth.style.opacity = "1";
+			eigth.style.transition = "1s";
+		}
+		function endoftrip7(){
+			eigth.style.opacity = "0";
+			eigth.style.transition = "1s";
+			ninth.style.display = "block";
+		}
+		function letsgo8(){
+			ninth.style.opacity = "1";
+			ninth.style.transition = "1s";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s";
+			name1.style.opacity = "1";
+			name1.style.transition = "2s";
+			text13.style.opacity = "1";
+			text13.style.transition = "2s"
+		}
+		function between(){
+			text13.style.opacity = "0";
+			text13.style.transition = "2s";
+			name1.style.opacity = "0";
+			name1.style.transition = "2s";
+		}
+		function dumb(){
+			text14.style.display = "block";
+			name2.style.display = "block";
+			text13.style.display = "none";
+			name1.style.display = "none";
+		}
+		function bonustext(){
+			text14.style.opacity = "1";
+			text14.style.transition = "2s";
+			name2.style.opacity = "1";
+			name2.style.transition = "2s";
+		}
+		function between2(){
+			name2.style.transition = "2s";
+			name2.style.opacity = "0";
+			text15.style.display = "block";
+			text14.style.transition = "2s";
+			text14.style.opacity = "0";
+		}
+		function bruh(){
+			name2.style.display = "none";
+			name1.style.display = "block";
+			text14.style.display = "none";			
+		}
+		function bonustext2(){
+			text15.style.opacity = "1";
+			text15.style.transition = "2s";
+			name1.style.transition = "2s";
+			name1.style.opacity = "1";
+			text16.style.display = "block"
+		}
+		function bonustext3(){
+			text16.style.opacity = "1";
+			text16.style.transition = "2s";
+			text17.style.display = "block"
+		}
+		function bonustext4(){
+			text17.style.opacity = "1";
+			text17.style.transition = "2s"
+		}
+		function endoftrip8(){
+			ninth.style.transition = "1s";
+			ninth.style.opacity = "0";
+			dial.style.opacity = "0";
+			dial.style.transition = "2s";
+			name1.style.opacity = "0";
+			name1.style.transition = "2s";
+			text15.style.transition = "2s";
+			text15.style.opacity = "0";
+			text16.style.transition = "2s";
+			text16.style.opacity = "0";
+			text17.style.transition = "2s";
+			text17.style.opacity = "0";
+		}
+		function stop4(){
+			ninth.style.display = "none";
+			text15.style.display = "none";
+			text16.style.display = "none";
+			text17.style.display = "none";
+			tenth.style.display = "block"
+		}
+		function letsgo9(){
+			tenth.style.transition = "1s";
+			tenth.style.opacity = "1";
+			dial.style.opacity = "1";
+			dial.style.transition = "2s";
+			name1.style.opacity = "1";
+			name1.style.transition = "2s";
+			text18.style.transition = "2s";
+			text18.style.opacity = "1";
+			text19.style.display = "block";
+			text20.style.display = "block";
+		}
+		function finalbonus(){
+			text19.style.transition = "2s";
+			text19.style.opacity = "1";
+		}
+		function finalbonus2(){
+			text20.style.transition = "2s";
+			text20.style.opacity = "1";
+			eleventh.style.display = "block";
+		}
+		function shit(){
+			text20.style.opacity = "0";
+			text20.style.transition = "2s";
+			text19.style.opacity = "0";
+			text19.style.transition = "2s";
+			text18.style.opacity = "0";
+			text18.style.transition = "2s"
+		}
+		function btw(){
+			text20.style.display = "none";
+			text21.style.display = "block";
+			text19.style.display = "none";
+			text18.style.display = "none";
+		}
+		function letsgo10(){
+			eleventh.style.transition = "1s";
+			eleventh.style.opacity = "1";
+			text21.style.opacity = "1";
+			text21.style.transition = "3s";
+			text22.style.display = "block"
+		}
+		function oya(){
+			text22.style.opacity = "1";
+			text22.style.transition = "2s"
+		}
+		function oya1(){
+			text21.style.opacity = "0";
+			text21.style.transition = "2s";
+			text22.style.opacity = "0";
+			text22.style.transition = "2s";
+			name1.style.opacity = "0";
+			name1.style.transition = "2s"
+		}
+		function oya2(){
+			text21.style.display = "none";
+			text22.style.display = "none";
+			name1.style.display = "none";
+			name2.style.display = "block";
+			text23.style.display = "block"
+		}
+		function oya3(){
+			name2.style.transition = "2s";
+			name2.style.opacity = "1";
+			text23.style.opacity = "1";
+			text23.style.transition = "2s"
+		}
+		function oya4(){
+			name2.style.opacity = "0";
+			name2.style.transition = "2s";
+			text23.style.opacity = "0";
+			text23.style.transition = "2s"
+		}
+		function oya5(){
+			name2.style.display = "none";
+			text23.style.display = "none";
+			text24.style.display = "block";
+			name1.style.display	= "block"
+		}
+		function oya6(){
+			name1.style.transition = "2s";
+			name1.style.opacity = "1";
+			text24.style.opacity = "1";
+			text24.style.transition = "2s";
+			text25.style.display = "block"
+		}
+		function oya7(){
+			text25.style.transition = "2s";
+			text25.style.opacity = "1";
+		}
+		function end(){
+			text25.style.transition = "2s";
+			text25.style.opacity = "0";
+			text24.style.transition = "2s";
+			text24.style.opacity = "0";
+			name1.style.transition = "2s";
+			name1.style.opacity = "0";
+			tenth.style.transition = "1s";
+			tenth.style.opacity = "0";
+			dial.style.opacity = "0";
+			dial.style.transition = "2s";
+			eleventh.style.transition = "1s";
+			eleventh.style.opacity = "0";
+		}
+		function ded(){
+			text25.style.display = "none";
+			text24.style.display = "none";
+			name1.style.display = "none";
+			tenth.style.display = "none";
+			dial.style.display = "none";
+			eleventh.style.display = "none";
+			game1.style.display = "block";
+		}
+		function gamef(){
+			game1.style.opacity = "1";
+			game1.style.transition = "2s";
+		}
+		function stopgame1(){
+			game1.style.display = "none";
+		}
+
+
+
+
+		bf.onclick = function(){
+		kar.innerHTML = "карандаш - ✅";
+		qf.style.display = "none";
+		alert("ура! карандашик");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+	bs.onclick = function(){
+		tet.innerHTML = "тетрадь - ✅";
+		qs.style.display = "none";
+		alert("ура! тетрадка");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+	bfo.onclick = function(){
+		pen.innerHTML = "пенал - ✅";
+		qfo.style.display = "none";
+		alert("ура! пенал");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+	bfi.onclick = function(){
+		cher.innerHTML = "чернила - ✅";
+		qfi.style.display = "none";
+		alert("ура! чернила");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+	bse.onclick = function(){
+		prt.innerHTML = "портфель - ✅";
+		qse.style.display = "none";
+		alert("ура! портфель");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+	bsev.onclick = function(){
+		azb.innerHTML = "азбука - ✅";
+		qsev.style.display = "none";
+		alert("ура! азбука");
+		score = score + 1;
+		if(score == 6){
+			alert("ты нашел все вещи!");
+			game1.style.opacity = "0";
+			game1.style.transition = "2s";
+			stopgame1()
+		}
+	}
+		let	int1 = setTimeout(letsgo, 2000);
+		let	int2 = setTimeout(endoftrip, 15000);
+		let	int3 = setTimeout(stop, 17000);
+		let	int4 = setTimeout(letsgo2, 20000);
+		let	int5 = setTimeout(bonust, 23000);
+		let	int6 = setTimeout(bonust2, 27000);
+		let	int7 = setTimeout(bonust3, 30000);
+		let	int8 = setTimeout(bonust4, 33000);
+		let	int9 = setTimeout(endoftrip2, 37000);
+		let	int10 = setTimeout(stop2, 39000);
+		let	int11 = setTimeout(letsgo3, 42000);
+		let	int12 = setTimeout(tbonus, 44000);
+		let	int13 = setTimeout(tbonus1, 47000);
+		let	int14 = setTimeout(endoftrip3, 51000);
+		let	int15 = setTimeout(stop3, 53000);
+		let	int16 = setTimeout(letsgo4, 55000);
+		let	int17 = setTimeout(txtbonus, 59000);
+		let	int18 = setTimeout(txtbonus2, 62000);
+		let	int19 = setTimeout(txtbonus3, 65000);
+		let	int20 = setTimeout(endoftrip4, 69000);
+		let	int21 = setTimeout(letsgo5, 72000);
+		let	int22 = setTimeout(endoftrip5, 77000);
+		let	int23 = setTimeout(letsgo6, 80000);
+		let	int24 = setTimeout(endoftrip6, 85000);
+		let	int25 = setTimeout(letsgo7, 89000);
+		let	int26 = setTimeout(endoftrip7, 93000);
+		let	int27 = setTimeout(letsgo8, 96000);
+		let	int28 = setTimeout(between, 98000);
+		let	int29 = setTimeout(dumb, 101200);
+		let	int30 = setTimeout(bonustext, 101600);
+		let	int31 = setTimeout(between2, 104000);
+		let	int32 = setTimeout(bruh, 105500);
+		let	int33 = setTimeout(bonustext2, 106000);
+		let	int34 = setTimeout(bonustext3, 109000);
+		let	int35 = setTimeout(bonustext4, 112000);
+		let	int36 = setTimeout(endoftrip8, 116000);
+		let	int37 = setTimeout(stop4, 118000);
+		let	int38 = setTimeout(letsgo9, 120000);
+		let	int39 = setTimeout(finalbonus, 123000);
+		let	int40 = setTimeout(finalbonus2, 126000);
+		let	int41 = setTimeout(shit, 129000);
+		let	int42 = setTimeout(btw, 131000);
+		let	int43 = setTimeout(letsgo10, 132000);
+		let	int44 = setTimeout(oya, 136000);
+		let	int45 = setTimeout(oya1, 140000);
+		let	int46 = setTimeout(oya2, 142000);
+		let	int47 = setTimeout(oya3, 144000);
+		let	int48 = setTimeout(oya4, 146000);
+		let	int49 = setTimeout(oya5, 148000);
+		let	int50 = setTimeout(oya6, 150000);
+		let	int51 = setTimeout(oya7, 153000);
+		let	int52 = setTimeout(end, 157000);
+		let	int53 = setTimeout(ded, 160000);
+		let	int54 = setTimeout(gamef, 162000);
+		setTimeout(stopgame1, 4000);
+}
+	</script>
+</body>
+</html>
